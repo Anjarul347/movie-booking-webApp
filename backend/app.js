@@ -26,7 +26,7 @@ app.use("/admin", adminRouter);
 app.use("/movies", movieRouter);
 app.use("/booking", bookingRouter);
 
-mongoose.connect(`${process.env.DATABASE}`)
+mongoose.connect(`${process.env.MONGO_URI}`)
 
 app.listen(PORT, () => {
     console.log(`Database connected.`);
