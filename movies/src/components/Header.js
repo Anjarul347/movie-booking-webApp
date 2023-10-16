@@ -1,9 +1,18 @@
 import React from 'react';
+import {AppBar} from "@mui/material";
+import MovieIcon from '@mui/icons-material/Movie';
 
 const Header = () => {
   return (
     <div>
-      <h1>Header</h1>
+      <AppBar>
+        <toolbar>
+          <box width={'205'}>
+            <MovieIcon/>
+          </box>
+
+        </toolbar>
+      </AppBar>
     </div>
   );
 }
