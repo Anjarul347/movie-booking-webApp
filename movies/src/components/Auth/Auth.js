@@ -1,6 +1,6 @@
 import React from 'react'
 import AuthForm from './AuthForm'
-import { sendUserAuthRequest } from '../../API-Helpers/api-helpers'
+import { sendUserAuthRequest } from '../../Api-Helpers/api-helpers'
 import { useDispatch } from 'react-redux'
 import { userActions } from '../../store'
 

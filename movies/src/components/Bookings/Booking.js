@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { getMoviedetails, newBooking } from '../../API-Helpers/api-helpers';
+import { getMoviedetails, newBooking } from '../../Api-Helpers/api-helpers';
 import { Box, Button, Dialog, FormLabel, TextField, Typography } from '@mui/material';
 // import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { useSelector } from 'react-redux';

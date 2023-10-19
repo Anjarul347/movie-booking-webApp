@@ -10,7 +10,7 @@ import {AppBar,
   TextField, 
   Toolbar} from '@mui/material'
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-import { getAllMovies } from '../API-Helpers/api-helpers';
+import { getAllMovies } from '../Api-Helpers/api-helpers';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { adminActions, userActions } from '../store';

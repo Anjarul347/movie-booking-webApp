@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Box } from '@mui/system'
 import { Typography } from '@mui/material'
 import MovieItem from './MovieItem'
-import { getAllMovies } from '../../API-Helpers/api-helpers'
+import { getAllMovies } from '../../Api-Helpers/api-helpers'
 const Movies = () => {
   const [Movies, setMovies] = useState([])
   useEffect(()=>{

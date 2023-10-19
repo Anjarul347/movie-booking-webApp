@@ -1,7 +1,7 @@
 import { Button, Checkbox, FormLabel, TextField, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
-import { addMovie } from '../../API-Helpers/api-helpers'
+import { addMovie } from '../../Api-Helpers/api-helpers'
 const labelProps={
     mt:1,
     mb:1,
