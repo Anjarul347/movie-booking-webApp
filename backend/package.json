@@ -4,6 +4,7 @@
   "description": "Movie Booking Application",
   "main": "app.js",
   "scripts": {
+    "main": "src/app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
