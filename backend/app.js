@@ -8,7 +8,7 @@ const movieRouter = require('./routes/movie-routes');
 const bookingRouter = require('./routes/booking-routes');
 dotenv.config();
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4500
 
 const cors = require('cors');
 app.use(cors());
@@ -26,7 +26,7 @@ app.use("/admin", adminRouter);
 app.use("/movies", movieRouter);
 app.use("/booking", bookingRouter);
 
-mongoose.connect(`${process.env.MONGO_URI}`)
+mongoose.connect(`${process.env.DATABASE}`)
 
 app.listen(PORT, () => {
     console.log(`Database connected.`);
