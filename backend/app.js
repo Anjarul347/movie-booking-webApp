@@ -26,8 +26,15 @@ app.use("/admin", adminRouter);
 app.use("/movies", movieRouter);
 app.use("/booking", bookingRouter);
 
-mongoose.connect(`${process.env.MONGO_URI}`)
+mongoose.connect(`${process.env.MONGO_URI}`, { useNewUrlParser: true, useUnifiedTopology: true } )
 
-app.listen(PORT, () => {
-    console.log(`Database connected.`);
-})
+// app.listen(PORT, () => {
+//     console.log(`Database connected.`);
+// })
+
+.then(() => {
+    console.log('Connected to MongoDB Atlas');
+  })
+  .catch((error) => {
+    console.error('Error connecting to MongoDB Atlas: ', error);
+  });
